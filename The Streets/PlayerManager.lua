@@ -51,15 +51,15 @@ local function AddPlayerListeners(Player: Player, Character: Model)
     end
 
 
-    local StaminaInstance = Utils.IsOriginal and Character:WaitForChild("Stamina")
+    --[[local StaminaInstance = Utils.IsOriginal and Character:WaitForChild("Stamina")
     if not StaminaInstance then
         local ServerTraits = Backpack:WaitForChild("ServerTraits")
         StaminaInstance = ServerTraits:WaitForChild("Stann")
-    end
+    end]]--
 
 
     OnHealthChanged(Humanoid.Health)
-    OnStaminaChanged(100)
+    --OnStaminaChanged(100)
 
     if Root then Root.Destroying:Once(OnRootPartDestroyed) else OnRootPartDestroyed() end
     Humanoid.Died:Once(OnHumanoidDied)
