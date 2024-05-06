@@ -78,9 +78,9 @@ spawn(function() PlayerManager = import("PlayerManager") end)
 
 while not ESP or not Menu or not Enums or not Utils or not Network or not Configs or not Raycast or not Commands or not ToolData or not DoorData or not Lighting or not TimerClass or not PlayerManager do wait() end -- waiting for the modules to load...
 
-if (Utils.IsOriginal and game.PlaceVersion ~= 1520) or (Utils.IsPrison and game.PlaceVersion ~= 225) then
+--[[if (Utils.IsOriginal and game.PlaceVersion ~= 1520) or (Utils.IsPrison and game.PlaceVersion ~= 225) then
     return messagebox("Error 0x2; Script is not up to date with place version", script_name .. ".cc", 0)
-end
+end]]--
 
 if _G.PonyHook then
     return messagebox("Error 0x3; Script is already running", script_name .. ".cc", 0)
