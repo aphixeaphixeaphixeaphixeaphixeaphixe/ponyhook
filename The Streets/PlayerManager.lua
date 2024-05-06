@@ -64,7 +64,7 @@ local function AddPlayerListeners(Player: Player, Character: Model)
     if Root then Root.Destroying:Once(OnRootPartDestroyed) else OnRootPartDestroyed() end
     Humanoid.Died:Once(OnHumanoidDied)
     Humanoid.HealthChanged:Connect(OnHealthChanged)
-    StaminaInstance.Changed:Connect(OnStaminaChanged)
+    --StaminaInstance.Changed:Connect(OnStaminaChanged)
 end
 
 
